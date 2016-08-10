@@ -1,0 +1,2 @@
+# Create a user with gender male
+curl -X POST -H "Content-type: application/json" -d '{"gender": "male"}' http://localhost:8080/grails_restful_api/user

@@ -1,0 +1,5 @@
+# Get user with id 1 - default JSON
+curl -X GET http://localhost:8080/grails_restful_api/user/1
+
+# Get user with id 1 - XML
+curl -X GET http://localhost:8080/grails_restful_api/user/1.xml

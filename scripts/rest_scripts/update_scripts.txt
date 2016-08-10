@@ -1,0 +1,2 @@
+# Update user 1 to be a female
+curl -X PUT -H "Content-type: application/json" -d '{"gender": "female"}' http://localhost:8080/grails_restful_api/user/1

@@ -1,0 +1,12 @@
+.classpath
+.project
+.settings/
+*.iml
+.idea/
+.idea_modules/
+target
+.DS_Store
+
+# Misc
+temp
+*.dump

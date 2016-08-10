@@ -1,0 +1,2 @@
+# Delete user with id 1
+curl -X DELETE http://localhost:8080/grails_restful_api/user/1
