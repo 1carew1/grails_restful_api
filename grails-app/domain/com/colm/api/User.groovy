@@ -39,4 +39,28 @@ class User {
   }
 
   static hasOne = [name: UserName, location: UserLocation, picture: UserPicture]
+
+  /**
+   * The purpose of this method is to find users with usernames
+   * Similar to the given username
+   * @param username
+   * @return
+   */
+  static List<User> findUsersWithUsernamesLike(String username) {
+    def userCriteria = createCriteria()
+    def results = (List<User>) userCriteria.list {like('username', "%$username%")}
+    return results
+  }
+
+  /**
+   * The purpose of this method is to find all users with the
+   * given last name
+   * @param lastName
+   * @return
+   */
+  static List<User> findUsersWithLastName(String lastName) {
+    def userCriteria = createCriteria()
+    def results = (List<User>) userCriteria.list {eq('name.last', lastName)}
+    return results
+  }
 }
