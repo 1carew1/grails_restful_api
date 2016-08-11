@@ -1,5 +1,11 @@
 package com.colm.api
 
+/**
+ * This domain is used to track the user's profile photo via String URLs
+ * It persists to the database when the user is saved
+ */
+
+
 class UserPicture {
 
   String large

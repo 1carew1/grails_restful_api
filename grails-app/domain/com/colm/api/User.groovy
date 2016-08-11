@@ -2,6 +2,10 @@ package com.colm.api
 
 import grails.rest.*
 
+/**
+ * This Domain is used to persist the user data using the grails built in rest features
+ * It allows for both XML and JSON formats
+ */
 
 @Resource(uri = '/user', formats = ['json', 'xml'])
 class User {

@@ -1,5 +1,10 @@
 package com.colm.api
 
+/**
+ * This domain is used to track the location of a user and as it is a domain it will
+ * persist to the database when the user is saved
+ */
+
 class UserLocation {
 
   String street

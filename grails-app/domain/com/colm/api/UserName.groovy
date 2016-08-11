@@ -1,5 +1,10 @@
 package com.colm.api
 
+/**
+ * The UserName Domain keeps track of the user's title and name
+ * It persists to the database when the user is saved
+ */
+
 class UserName {
 
   String title
